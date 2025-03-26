@@ -125,9 +125,20 @@ public class HashTable {
     public void show(){
         for (int i = 0; i < buckets.length; i++){
             Node current = buckets[i].getHead();
+
+            if (current != null) {
+            }
+            else {
+                System.out.println("Index " + i + " : No player found");
+            }
+
             while (current != null) {
-                System.out.println("Name:  " + current.data.getName() +
-                        "\nScore: " + current.data.getScore());
+                while (current.next != null) {
+                    System.out.print("Index " + i + " : Name: " + current.data.getName() + ", Score: " + current.data.getScore()+ " --> ");
+                    current = current.next;
+                    //System.out.print(" --> Index " + i +" Name: "+ current.data.getName() + ", " +"Score: "+ current.data.getScore()+ " ");
+                }
+                System.out.println("Index " + i + " : Name: " + current.data.getName() + ",  Score: " + current.data.getScore()+ " ");
                 current = current.next;
             }
         }

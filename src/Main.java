@@ -1,6 +1,3 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -68,7 +65,7 @@ public class Main {
          * createClone Method
          */
         HashTable hashTable3 = new HashTable(hashTable).createClone();
-//        hashTable3.show();
+        hashTable3.show();
 
 
         /**
@@ -77,11 +74,6 @@ public class Main {
         hashTable3.find("Sara Rogers");
         hashTable2.find("Carl Bailey");
         hashTable.find("Donald Green");
-
-
-
-
-
 
 
 
