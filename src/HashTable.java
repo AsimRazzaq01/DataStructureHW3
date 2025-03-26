@@ -22,7 +22,7 @@ public class HashTable {
         tKey = Math.abs(player.hashCode()) ;
         mainKey = tKey % buckets.length;
         return mainKey ;
-    }
+    }   // End getBuckets Method
 
 
     /**
@@ -43,7 +43,7 @@ public class HashTable {
             buckets[i] = new unorderedList();
             // Each bucket is a new List
         }
-    }
+    }   // End initializeBuckets Method
 
 
     /**
@@ -66,7 +66,7 @@ public class HashTable {
      */
     HashTable createClone() {
         return new HashTable(this);
-    }
+    }   //  End createClone Method
 
 
     /**
@@ -81,7 +81,7 @@ public class HashTable {
         int hashValue = getBuckets(p) ;
         buckets[hashValue].add(p) ;
         size++;
-    }
+    }   // End add Player Method
 
     /**
      * Method to resize the array * 2 and all the contents of the []
@@ -100,7 +100,7 @@ public class HashTable {
                 current = current.next;
             }
         }
-    }
+    }   // End resize Method
 
     /**
      * Method to search hash table for player based on name
@@ -117,7 +117,7 @@ public class HashTable {
         }
         System.out.println("No player with name " + name + " found");
         return null;
-    }
+    }   // End find Method
 
     /**
      * Method to show the entire hash table

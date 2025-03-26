@@ -1,5 +1,7 @@
 /**
  * List Class - singly-linked-unordered list that stores instances of player
+ * - naming convention is called unorderedList because when I change to class List{}
+ * - ide throws error and auto changes to default list class.
  */
 public class unorderedList {
     // Private member variable
@@ -62,7 +64,7 @@ public class unorderedList {
         // sets the head to the new player node making it the first node in the list
         // this now points towards the previous head of the list etc...
         head = newPlayerNode;
-    }
+    }   // End add Method
 
     /**
      * @param name -> target is the name for the Player we want to find
@@ -80,30 +82,9 @@ public class unorderedList {
             curr = curr.next;
         }
         return null;
-    }
+    }   // End find Method
 
 
 
 }   // End unordered Linked List
-
-
-
-
-
-
-//    Possible implementations from class slides
-//    public void insertItem(int item);
-//
-//    public void deleteItem(int item);
-//
-//    public boolean hasItem(int target);
-//
-//    public int retriveItem(int target) throws Exception;
-//
-//    public void  makeEmpty();
-//
-//    public boolean isFull();
-//
-//    public int getLength();
-
 

@@ -15,7 +15,7 @@ public class Player {
     public Player() {
         this.Name = "";
         this.Score = 0;
-    }
+    }   // End default Constructor
 
     /**
      * Constructor with parameter values
@@ -23,7 +23,7 @@ public class Player {
     public Player(String Name , int Score){
         this.Name = Name;
         this.Score = Score;
-    }
+    }   // End Player Constructor
 
     /**
      * Copy Constructor (DEEP COPY)
@@ -31,7 +31,7 @@ public class Player {
     public Player(Player other){
         this.Name = new String(other.Name) ;
         this.Score = other.Score;
-    }
+    }   // End Player copy Constructor
 
     /**
      *  Implement the getter and setter methods
@@ -55,7 +55,7 @@ public class Player {
      */
     public Player createClone(){
         return new Player(this.Name ,this.Score);
-    }
+    }   // End createClone Method
 
 
     /**
@@ -71,7 +71,7 @@ public class Player {
         }
         Player p = (Player) obj;
         return this.Name.equals(p.Name);
-    }
+    }   // End equals Method
 
     /**
      * To String method
@@ -80,7 +80,7 @@ public class Player {
     @Override
     public String toString(){
         return "Name: " + this.Name + "\nScore: " + this.Score;
-    }
+    }   // End toString Method
 
     /**
      *
@@ -89,7 +89,7 @@ public class Player {
     public int hashCode(){
         //return Objects.hashCode(this.Name);
         return Objects.hash(Name);
-    }
+    }   // End hashCode
 
 
 }   // End Player Class
