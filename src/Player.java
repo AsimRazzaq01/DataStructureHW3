@@ -1,5 +1,8 @@
 import java.util.Objects;
 
+/**
+ * Player Class
+ */
 public class Player {
     /** Player class variables
      */
@@ -84,8 +87,9 @@ public class Player {
      * @return hashcode based on player name obj
      */
     public int hashCode(){
-        return Objects.hashCode(this.Name);
+        //return Objects.hashCode(this.Name);
+        return Objects.hash(Name);
     }
 
 
-}
+}   // End Player Class
